@@ -23,7 +23,7 @@ let newBalance = oldBalance + interest;
 
 
 
-
+let story = `It's ${month + day + year}, and ${name} is in a gas station. They are buying ${meal} for the next ${days} days. What do they buy? Why, ${food} of course!  The price of the ${food} was ${price}. At the register, the total comes out to be ${newPrice} dollars when accounting for the ever-terrible U.S. sales tax. ${name} was so ${emotion} at the sight of this absurd number that they blacked out. They wake up in a sewer and they check their phone. They realize they have been asleep for ${years} years. This is great news because of bank interest in which their bank account, which had ${oldBalance} dollars before, now has ${newBalance} dollars in it, which means they can afford ${ } of ${food} and still have ${ } dollars left!`;
 
 
 
