@@ -29,7 +29,7 @@ let story = `It's ${month + day + year}, and ${name} is in a gas station. They a
 
 
 
-
+//justy cloned git hub, feelin good :)
 
 
 
