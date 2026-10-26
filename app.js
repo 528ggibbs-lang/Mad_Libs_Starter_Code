@@ -1,4 +1,4 @@
-let name = prompt('enter a name');
+let name = prompt('enter a name'); /*Fun Fact! this is a variable!!!!!!!!!!!!*/
 let month = prompt('enter a month');
 let day = Number(prompt('enter a number 1-28'));
 let year = Number(prompt('enter a year'));
@@ -8,12 +8,16 @@ let food = prompt('enter a questionable food');
 let price = Number(prompt('enter a number between 8-32'));
 let tax = price * 0.06625;
 let newPrice = Number(price + tax);
-newPrice = newPrice.toFixed(2);
+newPrice = newPrice.toFixed(2); /*Fun Fact! this redefines a variable!!!!!!!!!!!!*/
 let emotion = prompt('enter an emotion');
 let years = Number(prompt('enter a number'));
 let oldBalance = newPrice--;
 let interest = oldBalance * 0.1849 * years;
 let newBalance = oldBalance + interest;
+newBalance = newBalance.toFixed(2); /*Fun Fact! this makes it so that the variable (of which is a number) has its decimal fixed to the hundredth place!!!@!!!!!@!@!@!!!@!@!!!!!!!!!!!!!!*/
+let amountFood = Math.floor(newBalance / newPrice);
+let leftover = newBalance % newPrice;
+leftover = leftover.toFixed(2);
 
 
 
@@ -22,15 +26,18 @@ let newBalance = oldBalance + interest;
 
 
 
-
-let story = `It's ${month + day + year}, and ${name} is in a gas station. They are buying ${meal} for the next ${days} days. What do they buy? Why, ${food} of course!  The price of the ${food} was ${price}. At the register, the total comes out to be ${newPrice} dollars when accounting for the ever-terrible U.S. sales tax. ${name} was so ${emotion} at the sight of this absurd number that they blacked out. They wake up in a sewer and they check their phone. They realize they have been asleep for ${years} years. This is great news because of bank interest in which their bank account, which had ${oldBalance} dollars before, now has ${newBalance} dollars in it, which means they can afford ${ } of ${food} and still have ${ } dollars left!`;
+let story = `It's ${month + ' ' + day + ', ' + year},  and ${name} is in a gas station. They are buying ${meal} for the next ${days} days. What do they buy? Why, ${food} of course!  
+The price of the ${food} was ${price} dollars. At the register, the total comes out to be ${newPrice} dollars when accounting for the ever-terrible NJ sales tax. ${name}
+ was so ${emotion} at the sight of this absurd number that they blacked out. They wake up in a sewer and they check their phone. They realize they have been asleep for ${years} years. 
+ This is great news because of bank interest in which their bank account, which had ${oldBalance} dollars before, now has ${newBalance} dollars in it, which means they can afford ${amountFood} of ${food} 
+ and still have ${leftover} dollars left!`;
 
 
 
 
 
 //justy cloned git hub, feelin good :)
-
+//i loooocve committing
 
 
 
@@ -83,7 +90,7 @@ let story = `It's ${month + day + year}, and ${name} is in a gas station. They a
 
 // PART 6 — DISPLAY ON THE WEBPAGE
 // TODO: Uncomment and complete the line below once your story variable exists.
-// document.getElementById("madlib-output").innerHTML = story;
+document.getElementById("madlib-output").innerHTML = story;
 
 // FINAL: Add at least three meaningful comments describing your code.
 // TEST: Try TWO sets of answers and check the browser console for errors.
